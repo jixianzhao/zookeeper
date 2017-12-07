@@ -1818,9 +1818,10 @@ xmlns:cs="antlib:com.puppycrawl.tools.checkstyle.ant">
        <delete file="${src.dir}/java/ant-eclipse-1.0.bin.tar.bz2" />
      </target>
 
-     <target name="eclipse"
-             depends="ant-eclipse-download,init,ivy-retrieve,build-generated,ivy-retrieve-test"
-             description="Create eclipse project files">
+    <target name="eclipse"
+            depends="init,ivy-retrieve,build-generated,ivy-retrieve-test"
+            description="Create eclipse project files">
+     <!-- depends="ant-eclipse-download,init,ivy-retrieve,build-generated,ivy-retrieve-test" -->
        <ivy:resolve useOrigin="true" conf="test"/>
        <ivy:cachepath pathid="default.path.id" conf="default" />
        <ivy:cachepath pathid="junit.path.id" conf="test" transitive="false"/>

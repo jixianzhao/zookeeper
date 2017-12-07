@@ -18,9 +18,9 @@
 -->
 
   <property name="repo.maven.org"
-    value="https://repo1.maven.org/maven2/" override="false"/>
+    value="http://maven.aliyun.com/nexus/content/groups/public/" override="false"/>
   <property name="repo.jboss.org"
-    value="https://repository.jboss.org/nexus/content/groups/public/" override="false"/>
+    value="http://maven.aliyun.com/nexus/content/groups/public/" override="false"/>
   <property name="maven2.pattern"
     value="[organisation]/[module]/[revision]/[module]-[revision]"/>
   <property name="maven2.pattern.ext" value="${maven2.pattern}.[ext]"/>
